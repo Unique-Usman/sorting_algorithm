@@ -5,13 +5,11 @@
  * @array: the array to be sorted
  * @low: to indicate the start of the partition
  * @high: to indicate the end of the partition
+ * @size: the sixe of the array
  */
 void sort(int *array, int low, int high, int size)
 {
-	int pivot;
-	int start;
-	int end;
-	int temp;
+	int pivot, start, end, temp;
 
 	pivot = array[high];
 	start = low;
